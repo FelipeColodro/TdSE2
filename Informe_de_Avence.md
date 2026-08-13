@@ -1,7 +1,7 @@
 # <span style="color: #1F618D;">Informe de Avances del TP Final</span>
 
 *Autor:* Mariana Dos Reis - Padrón 111545
-*Fecha:* [COMPLETAR fecha de reentrega]
+*Fecha:* 13/08/26
 *Cuatrimestre:* 1er cuatrimestre 2026
 
 A continuación, se detalla el informe de avances del TP final a partir de los requerimientos.
