@@ -18,14 +18,14 @@ A continuación, se detalla el informe de avances del TP final a partir de los r
 | Grupo | ID | Descripción | Estado |
 | :--- | :--- | :--- | :---: |
 | *Control de movimiento* | 1.1 | El sistema controlará el motor del ascensor mediante señales PWM. | 🟡 |
-| | 1.2 | El sistema permitirá el desplazamiento entre pisos según las solicitudes. | 🟢 |
-| | 1.3 | El sistema detendrá el motor al llegar al piso solicitado. | 🟢 |
-| *Interfaz de usuario* | 2.1 | El sistema contará con botoneras internas y externas para seleccionar pisos. | 🟢 |
-| | 2.2 | El sistema mostrará en pantalla LCD el piso actual y mensajes de estado. | 🟢 |
-| | 2.3 | El sistema notificará visualmente errores o estados de espera. | 🟢 |
-| *Seguridad* | 3.1 | El sistema contará con sensores de puerta y sobrecarga. | 🟢 |
-| | 3.2 | El sistema impedirá el movimiento si la puerta está abierta o hay sobrepeso. | 🟢 |
-| | 3.3 | El sistema contará con un botón de emergencia para detener el ascensor. | 🟢 |
+| | 1.2 | El sistema permitirá el desplazamiento entre pisos según las solicitudes. | 🟡 |
+| | 1.3 | El sistema detendrá el motor al llegar al piso solicitado. | 🟡 |
+| *Interfaz de usuario* | 2.1 | El sistema contará con botoneras internas y externas para seleccionar pisos. | 🟡 |
+| | 2.2 | El sistema mostrará en pantalla LCD el piso actual y mensajes de estado. | 🟡 |
+| | 2.3 | El sistema notificará visualmente errores o estados de espera. | 🟡 |
+| *Seguridad* | 3.1 | El sistema contará con sensores de puerta y sobrecarga. | 🟡 |
+| | 3.2 | El sistema impedirá el movimiento si la puerta está abierta o hay sobrepeso. | 🟡 |
+| | 3.3 | El sistema contará con un botón de emergencia para detener el ascensor. | 🟡 |
 
 <br>
 
