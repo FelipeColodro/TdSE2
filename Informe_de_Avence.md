@@ -1,6 +1,8 @@
 # <span style="color: #1F618D;">Informe de Avances del TP Final</span>
 
-*Autor:* Mariana Dos Reis - Padrón 111545
+*Autores:* Mariana dos Reis - Padrón 111545
+           Uma Toscan - Padrón 111106
+           Felipe Colodro - Padrón 106433
 *Fecha:* 13/08/26
 *Cuatrimestre:* 1er cuatrimestre 2026
 
