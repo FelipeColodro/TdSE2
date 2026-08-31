@@ -496,7 +496,7 @@ Al finalizar la compilación en STM32CubeIDE, el entorno genera automáticamente
 
 <div align="center">
 <img width="600" alt="Build Analyzer" src="[COMPLETAR: URL de la captura]" />
-<p><em>Figura 4.2: Reporte de uso de memoria RAM y FLASH.</em></p>
+<p><em>Figura 4.1: Reporte de uso de memoria RAM y FLASH.</em></p>
 </div>
 
 Con el fin de facilitar la interpretación de estos resultados, la Tabla 4.2 desglosa el aporte de cada sección del binario a la ocupación real de las regiones físicas de memoria del STM32F103RB.
@@ -522,7 +522,7 @@ La Figura 4.3 muestra los resultados observados en la pantalla *Live Expressions
 
 <div align="center">
 <img width="500" alt="WCET" src="[COMPLETAR: URL de la captura de Live Expressions]" />
-<p><em>Figura 4.3: Pantalla de Live Expressions con los peores tiempos de ejecución.</em></p>
+<p><em>Figura 4.2: Pantalla de Live Expressions con los peores tiempos de ejecución.</em></p>
 </div>
 
 Se toman en cuenta los tiempos medidos para cada tarea del super-loop, correspondientes a las etapas Escrutar → Procesar → Actuar descritas en el Capítulo 3. El valor de cada una es el tiempo en microsegundos (µs) devuelto por el DWT. En la Tabla 4.3 se detalla el WCET medido de cada tarea.
