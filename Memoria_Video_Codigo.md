@@ -393,22 +393,22 @@ En la Tabla 3.1 se detalla la asignación completa de pines:
 
 <div align="center">
 <img src="imagenes/cubemx_ioc.jpg" alt="Configuración .ioc de CubeMX" width="70%"><br>
-<em>Figura 3.2: Configuración de pines en STM32CubeMX (.ioc).</em>
+<em>Figura 3.1: Configuración de pines en STM32CubeMX (.ioc).</em>
 </div>
 
 <div align="center">
 <img src="imagenes/placa_dorso.jpg" alt="Placa soldada - frente" width="45%"><br>
-<em>Figura 3.3: Placa experimental soldada de frente.</em>
+<em>Figura 3.2: Placa experimental soldada de frente.</em>
 </div>
 
 <div align="center">
 <img src="imagenes/placa_dorso.jpg" alt="Placa soldada - dorso" width="70%"><br>
-<em>Figura 3.4: Placa experimental soldada de dorso.</em>
+<em>Figura 3.3: Placa experimental soldada de dorso.</em>
 </div>
 
 <div align="center">
 <img src="imagenes/maqueta_completa.jpg" alt="Maqueta mecánica completa" width="70%"><br>
-<em>Figura 3.5: Maqueta mecánica completa del ascensor.</em>
+<em>Figura 3.4: Maqueta mecánica completa del ascensor.</em>
 </div>
 
 ## 3.2. Descripción del comportamiento (Máquina de Estados)
@@ -421,7 +421,7 @@ Los estados `EMERGENCIA` y `FALLA` tienen prioridad absoluta: cualquier evento d
 
 <p align="center">
   <img src="imagenes/image7.png" alt="Diagrama de estados" width="60%"><br>
-  <em>Figura 3.1: Máquina de estados del sistema.</em>
+  <em>Figura 3.5: Máquina de estados del sistema.</em>
 </p>
 
 ## 3.3. Arquitectura del firmware
@@ -430,7 +430,7 @@ El firmware se estructura en las etapas **Escrutar → Procesar → Actuar**, co
 
 <p align="center">
   <img src="imagenes/image1.png" alt="Orden de despacho de tareas" width="60%"><br>
-  <em>Figura 3.2: Orden de despacho de las tareas dentro de una vuelta del ejecutivo cíclico.</em>
+  <em>Figura 3.6: Orden de despacho de las tareas dentro de una vuelta del ejecutivo cíclico.</em>
 </p>
 
 ### 3.3.1. Módulo Tick
