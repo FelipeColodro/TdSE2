@@ -554,7 +554,8 @@ Se toman en cuenta los tiempos medidos para cada tarea del super-loop, correspon
 
 </div>
 
-Como se observa, en el peor de los casos —cuando se acumulan todos los peores tiempos de ejecución— se obtiene un WCET total de [COMPLETAR] µs. [COMPLETAR: indicar si el resultado cumple con el margen de 1000 µs y cuántos µs de margen deja]. [COMPLETAR: identificar qué tarea resultó más costosa y por qué —por ejemplo, si `Escrutar_Actualizar` domina el tiempo por la cantidad de entradas con antirrebote que revisa en cada vuelta, o si la lectura por I2C de la celda de carga introduce la mayor latencia—, y si esa tarea tiene margen real de optimización o si ya está ajustada al mínimo necesario].
+Como se observa, en el peor de los casos —cuando se acumulan todos los peores tiempos de ejecución— se obtiene un WCET total de 110 µs. Este resultado cumple holgadamente con el requisito de tiempo del ejecutor cíclico de 1000 µs (1 ms), dejando un amplio margen operativo disponible de 890 µs (un 89 % de holgura) en cada vuelta del super-loop.
+La tarea que resultó más costosa dentro del ciclo fue task_dta_list[0] con 81 µs, la cual domina el tiempo de ejecución al concentrar el escrutinio de entradas, el procesamiento de sensores y la lógica de la máquina de estados (en comparación con los 29 µs de task_dta_list[1]). Esta tarea se encuentra ajustada al mínimo necesario gracias a la arquitectura Bare Metal no bloqueante implementada, la cual garantiza un comportamiento determinístico y confirma que el sistema posee margen suficiente para incorporar nuevas funcionalidades sin arriesgar los tiempos de respuesta.
 
 ## 4.5. Cálculo del Factor de Uso (U) de la CPU
 
