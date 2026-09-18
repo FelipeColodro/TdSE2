@@ -546,11 +546,9 @@ Se toman en cuenta los tiempos medidos para cada tarea del super-loop, correspon
 
 | Tarea | WCET medido (µs) |
 | :--- | :---: |
-| Escrutar_Actualizar | [COMPLETAR] |
-| BLE_Actualizar | [COMPLETAR] |
-| FsmAscensor_Tick | [COMPLETAR] |
-| Buzzer_Actualizar | [COMPLETAR] |
-| **TOTAL (ciclo completo)** | **[COMPLETAR]** |
+| task_dta_list[0] | 81 |
+| task_dta_list[1] | 29 |
+| **TOTAL (ciclo completo)** | **110** |
 
 <em>Tabla 4.3: Peores casos de tiempo de ejecución según tarea.</em>
 
