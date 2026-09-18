@@ -565,7 +565,7 @@ $$U = \frac{C}{T} \qquad (4.1)$$
 
 donde T = 1000 µs es el período fijado por el SysTick.
 
-Reemplazando C con el WCET total obtenido en la Tabla 4.3, se obtiene un Factor de Uso de [COMPLETAR] (es decir, un [COMPLETAR]% del tiempo disponible en cada vuelta del ciclo). Esto deja un [COMPLETAR]% del tiempo en el que el microcontrolador no está ejecutando tareas.
+Reemplazando C con el WCET total obtenido en la Tabla 4.3 (110 µs), se obtiene un Factor de Uso de 0,11 (es decir, un 11% del tiempo disponible en cada vuelta del ciclo). Esto deja un 89% del tiempo en el que el microcontrolador no está ejecutando tareas.
 
 Cabe aclarar que esta estimación corresponde al peor caso absoluto: ocurre únicamente cuando se combinan en la misma vuelta las tareas más costosas (por ejemplo, un evento simultáneo de sobrecarga y actualización de LCD). En el régimen habitual de operación —ascensor en reposo (IDLE) esperando un pedido de piso— el tiempo de ejecución real es sensiblemente menor, ya que la mayoría de las tareas del super-loop no tienen trabajo pendiente en cada vuelta.
 
