@@ -401,28 +401,21 @@ En la Tabla 3.1 se detalla la asignación completa de pines:
 <div align="center">
 <img src="imagenes/placa_frente.webp" alt="Placa soldada - frente" width="40%"><br>
 <em>Figura 3.2: Placa experimental soldada de frente.</em>
-  
 </div>
-
 
 <div align="center">
 <img src="imagenes/placa_dorso.webp" alt="Placa soldada - dorso" width="40%"><br>
 <em>Figura 3.3: Placa experimental soldada de dorso.</em>
-  
 </div>
-
 
 <div align="center">
 <img src="imagenes/maqueta_frente.webp" alt="Maqueta mecánica completa" width="40%"><br>
 <em>Figura 3.4: Maqueta mecánica completa del ascensor de frente.</em>
-  
 </div>
-
 
 <div align="center">
 <img src="imagenes/maqueta_dorso.webp" alt="Maqueta mecánica completa" width="40%"><br>
 <em>Figura 3.5: Maqueta mecánica completa del ascensor de dorso.</em>
-  
 </div>
 
 ## 3.2. Descripción del comportamiento (Máquina de Estados)
@@ -509,7 +502,7 @@ En el video disponible en el siguiente enlace [VIDEO](https://drive.google.com/f
 Al finalizar la compilación en STM32CubeIDE, el entorno genera automáticamente el Build Analyzer, una vista que desglosa el uso de memoria FLASH y RAM del binario resultante. La Figura 4.2 muestra este reporte, sirviendo como evidencia de que el firmware del ascensor compila correctamente sobre el STM32F103RB.
 
 <div align="center">
-<img width="600" alt="Build Analyzer" src="[COMPLETAR: URL de la captura]" />
+<img width="600" alt="Build Analyzer" src="imagenes/Memoria.webp" />
 <p><em>Figura 4.1: Reporte de uso de memoria RAM y FLASH.</em></p>
 </div>
 
@@ -535,7 +528,7 @@ En esta sección se busca comprender el comportamiento temporal del programa en 
 La Figura 4.3 muestra los resultados observados en la pantalla *Live Expressions* del depurador de STM32CubeIDE.
 
 <div align="center">
-<img width="500" alt="WCET" src="[COMPLETAR: URL de la captura de Live Expressions]" />
+<img width="500" alt="WCET" src="imagenes/WCET.webp" />
 <p><em>Figura 4.2: Pantalla de Live Expressions con los peores tiempos de ejecución.</em></p>
 </div>
 
