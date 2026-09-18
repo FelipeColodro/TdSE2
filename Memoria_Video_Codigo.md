@@ -396,24 +396,28 @@ En la Tabla 3.1 se detalla la asignación completa de pines:
 <em>Figura 3.1: Configuración de pines en STM32CubeMX (.ioc).</em>
 </div>
 
+
 <div align="center">
 <img src="imagenes/placa_frente.webp" alt="Placa soldada - frente" width="40%"><br>
 <em>Figura 3.2: Placa experimental soldada de frente.</em>
 </div>
+
 
 <div align="center">
 <img src="imagenes/placa_dorso.webp" alt="Placa soldada - dorso" width="40%"><br>
 <em>Figura 3.3: Placa experimental soldada de dorso.</em>
 </div>
 
+
 <div align="center">
 <img src="imagenes/maqueta_frente.webp" alt="Maqueta mecánica completa" width="40%"><br>
 <em>Figura 3.4: Maqueta mecánica completa del ascensor de frente.</em>
 </div>
 
+
 <div align="center">
 <img src="imagenes/maqueta_dorso.webp" alt="Maqueta mecánica completa" width="40%"><br>
-<em>Figura 3.: Maqueta mecánica completa del ascensor de dorso.</em>
+<em>Figura 3.5: Maqueta mecánica completa del ascensor de dorso.</em>
 </div>
 
 ## 3.2. Descripción del comportamiento (Máquina de Estados)
