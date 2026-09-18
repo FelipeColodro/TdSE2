@@ -397,22 +397,22 @@ En la Tabla 3.1 se detalla la asignación completa de pines:
 </div>
 
 <div align="center">
-<img src="imagenes/placa_fente.webp" alt="Placa soldada - frente" width="45%"><br>
+<img src="imagenes/placa_frente.webp" alt="Placa soldada - frente" width="40%"><br>
 <em>Figura 3.2: Placa experimental soldada de frente.</em>
 </div>
 
 <div align="center">
-<img src="imagenes/placa_dorso.webp" alt="Placa soldada - dorso" width="70%"><br>
+<img src="imagenes/placa_dorso.webp" alt="Placa soldada - dorso" width="40%"><br>
 <em>Figura 3.3: Placa experimental soldada de dorso.</em>
 </div>
 
 <div align="center">
-<img src="imagenes/maqueta_fente.webp" alt="Maqueta mecánica completa" width="70%"><br>
+<img src="imagenes/maqueta_frente.webp" alt="Maqueta mecánica completa" width="40%"><br>
 <em>Figura 3.4: Maqueta mecánica completa del ascensor de frente.</em>
 </div>
 
 <div align="center">
-<img src="imagenes/maqueta_dorso.webp" alt="Maqueta mecánica completa" width="70%"><br>
+<img src="imagenes/maqueta_dorso.webp" alt="Maqueta mecánica completa" width="40%"><br>
 <em>Figura 3.: Maqueta mecánica completa del ascensor de dorso.</em>
 </div>
 
