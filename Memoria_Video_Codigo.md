@@ -518,16 +518,16 @@ Con el fin de facilitar la interpretación de estos resultados, la Tabla 4.2 des
 
 <div align="center">
 
-| Región Física | Secciones del Binario | Usado [Bytes] | Total Disponible [Bytes] | Ocupación |
-| :--- | :--- | :---: | :---: | :---: |
-| FLASH | .text ([COMPLETAR]) + .data ([COMPLETAR]) | [COMPLETAR] | 131.072 | [COMPLETAR] % |
-| RAM | .bss ([COMPLETAR]) + .data ([COMPLETAR]) | [COMPLETAR] | 20.480 | [COMPLETAR] % |
+| Región Física | Usado [Bytes] | Total Disponible [Bytes] | Ocupación |
+| :--- | :---: | :---: | :---: |
+| RAM | 3.16 K | 20 K | 15.78% |
+| FLASH |  43.23 K | 128 K | 33.77% |
 
 <em>Tabla 4.2: Desglose de secciones del binario y ocupación de memoria.</em>
 
 </div>
 
-Como se desprende de la métrica final, el firmware utiliza aproximadamente un [COMPLETAR]% de la memoria de programa (FLASH) disponible y un [COMPLETAR]% de la memoria dinámica (RAM), dejando un margen operativo [COMPLETAR: holgado / ajustado / al límite, según corresponda]. Asimismo, no se observaron fallos ni advertencias del linker que indiquen pérdida excesiva de memoria durante la compilación.
+Como se desprende de la métrica final, el firmware utiliza aproximadamente un 16% de la memoria de programa (FLASH) disponible y un 34% de la memoria dinámica (RAM), dejando un margen operativo holgado. Asimismo, no se observaron fallos ni advertencias del linker que indiquen pérdida excesiva de memoria durante la compilación.
 
 ## 4.4. Medición y análisis de tiempos de ejecución (WCET)
 
