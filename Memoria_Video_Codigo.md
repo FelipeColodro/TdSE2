@@ -594,7 +594,7 @@ La Tabla 4.4 resume el consumo medido en los distintos modos de operación del s
 
 </div>
 
-[COMPLETAR: redactar la conclusión una vez completada la tabla — cuál modo/riel consume más (es esperable que sea el riel de 5V durante el viaje, por el motor DC), y si el osciloscopio mostró alguna caída de tensión relevante en el riel de 3,3V durante el arranque del motor. Como se definió en el Capítulo 1, este prototipo no implementa un modo de bajo consumo, por lo que a diferencia de otros proyectos de la materia no corresponde comparar contra un estado de suspensión del microcontrolador (WFI); la comparación relevante acá es entre reposo y operación activa, y entre rieles.]
+Como se observa en la Tabla 4.4, el mayor consumo del sistema se concentra en el riel de 5V durante un viaje en curso, alcanzando un pico de 350 mA (1750 mW), producto de la corriente que demanda el motor DC a través del driver L298N. En comparación, el resto de las condiciones medidas —reposo en ambos rieles y operación con LCD y Bluetooth activos— se mantienen en un rango acotado de 45 a 60 mA, dominado por el consumo estático de los periféricos digitales (LCD, RC522, HM-10, HX711) más que por la carga computacional del microcontrolador. El osciloscopio no mostró caídas de tensión relevantes en el riel de 3,3V durante el arranque del motor, lo que indica un desacople adecuado entre la etapa de potencia (5V) y la etapa lógica (3,3V) de la placa. La comparación relevante en este caso es entre el consumo en reposo y el consumo durante la operación activa: la diferencia entre ambos regímenes (de ~45 mA a ~350 mA en el riel de 5V) está determinada casi en su totalidad por el accionamiento del motor, no por el firmware.
 
 ## 4.7. Cumplimiento de requisitos
 
