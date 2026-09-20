@@ -584,7 +584,7 @@ La Tabla 4.4 resume el consumo medido en los distintos modos de operación del s
 
 | Modo de operación | Riel | Corriente consumida [mA] | Potencia consumida [mW] |
 | :--- | :---: | :---: | :---: |
-| Reposo (IDLE, sin pedidos pendientes) | 3.3 V | [45 | 148.5 |
+| Reposo (IDLE, sin pedidos pendientes) | 3.3 V | 45 | 148.5 |
 | Reposo (IDLE, sin pedidos pendientes) | 5 V | 45 | 225 |
 | Viaje en curso (motor + driver L298N activos) | 3.3 V | 55 | 181.5 |
 | Viaje en curso (motor + driver L298N activos) | 5 V | 350 | 1750 |
