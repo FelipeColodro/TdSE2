@@ -643,9 +643,9 @@ Como se observa en la Tabla 4.4, el mayor consumo del sistema se concentra en el
 
 
 
-## Capítulo 5: Conclusiones
+# Capítulo 5: Conclusiones
 
-### 5.1. Resultados obtenidos
+## 5.1. Resultados obtenidos
 
 Se logró un prototipo funcional que integra control de movimiento entre pisos, lectura de tarjetas RFID para el acceso, detección de sobrecarga mediante celda de carga, interfaz local por LCD y telemetría por Bluetooth, todo sobre una arquitectura Bare Metal con ejecutivo cíclico y tick de 1 ms.
 
@@ -653,7 +653,7 @@ Durante el desarrollo surgieron varias dificultades no triviales. La lectura de 
 
 En conjunto, estas dificultades fueron resueltas mediante instrumentación progresiva (agregando trazas de depuración y, en el caso de los tiempos de ejecución, el contador de ciclos DWT) antes que por prueba y error, lo que permitió aislar cada problema al módulo que lo originaba.
 
-### 5.2. Próximos pasos
+## 5.2. Próximos pasos
 
 Si bien el prototipo actual cumple con los objetivos funcionales planteados para esta etapa, quedaron identificadas varias líneas de mejora para una futura iteración:
 
