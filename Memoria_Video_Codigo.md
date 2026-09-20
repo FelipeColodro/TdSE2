@@ -622,7 +622,7 @@ La Tabla 4.4 resume el consumo medido en los distintos modos de operación del s
 <div align="center">
 
 | Grupo | ID | Descripción | Estado |
-| :---- | :---- | :---- | :---- |
+| :---- | :---- | :---- | :----: |
 | Movimiento | 1.1 | 3 paradas (PB, P1, P2) |  🟢 |
 | | 1.2 | Detección de llegada por reed switch | 🟢 |
 | | 1.3 | Control de velocidad por PWM | 🟢 |
