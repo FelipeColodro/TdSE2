@@ -392,7 +392,7 @@ En la Tabla 3.1 se detalla la asignación completa de pines:
 </div>
 
 <div align="center">
-<img src="imagenes/cubemx_ioc.jpg" alt="Configuración .ioc de CubeMX" width="70%"><br>
+<img src="imagenes/iov.webp" alt="Configuración .ioc de CubeMX" width="40%"><br>
 <em>Figura 3.1: Configuración de pines en STM32CubeMX (.ioc).</em>
 </div>
 
@@ -583,11 +583,11 @@ La Tabla 4.4 resume el consumo medido en los distintos modos de operación del s
 
 | Modo de operación | Riel | Corriente consumida [mA] | Potencia consumida [mW] |
 | :--- | :---: | :---: | :---: |
-| Reposo (IDLE, sin pedidos pendientes) | 3,3 V | [COMPLETAR] | [COMPLETAR] |
-| Reposo (IDLE, sin pedidos pendientes) | 5 V | [COMPLETAR] | [COMPLETAR] |
-| Viaje en curso (motor + driver L298N activos) | 3,3 V | [COMPLETAR] | [COMPLETAR] |
-| Viaje en curso (motor + driver L298N activos) | 5 V | [COMPLETAR] | [COMPLETAR] |
-| LCD + Bluetooth activos simultáneamente | 3,3 V | [COMPLETAR] | [COMPLETAR] |
+| Reposo (IDLE, sin pedidos pendientes) | 3.3 V | [45 | 148.5 |
+| Reposo (IDLE, sin pedidos pendientes) | 5 V | 45 | 225 |
+| Viaje en curso (motor + driver L298N activos) | 3.3 V | 55 | 181.5 |
+| Viaje en curso (motor + driver L298N activos) | 5 V | 350 | 1750 |
+| LCD + Bluetooth activos simultáneamente | 3.3 V | 60 | 198 |
 
 <em>Tabla 4.4: Consumo energético del sistema por modo de operación y riel de alimentación.</em>
 
@@ -622,18 +622,18 @@ La Tabla 4.4 resume el consumo medido en los distintos modos de operación del s
 
 | Grupo | ID | Descripción | Estado |
 | :---- | :---- | :---- | :---- |
-| Movimiento | 1.1 | 3 paradas (PB, P1, P2) | [COMPLETAR] |
-| | 1.2 | Detección de llegada por reed switch | [COMPLETAR] |
-| | 1.3 | Control de velocidad por PWM | [COMPLETAR] |
-| | 1.4 | Watchdog de viaje (timeout → FALLA) | [COMPLETAR] |
-| Llamado de piso | 2.1 | Botonera externa e interna | [COMPLETAR] |
-| | 2.2 | Cola de pedidos pendientes | [COMPLETAR] |
-| Puerta | 3.1 - 3.3 | Apertura/cierre automático con sensor | [COMPLETAR] |
-| Seguridad | 4.1 - 4.3 | Emergencia, sobrecarga, buzzer | [COMPLETAR] |
-| Control de acceso | 5.1 - 5.2 | Lectura y validación de UID (RC522) | [COMPLETAR] |
-| Interfaz de usuario | 6.1 - 6.3 | LCD, LEDs, Bluetooth | [COMPLETAR] |
-| Configuración | 7.1 - 7.3 | Menú SET_UP + persistencia en Flash | [COMPLETAR] |
-| Arquitectura | 8.1 - 8.4 | Bare metal, super-loop <1ms, tick 1ms, no bloqueante | [COMPLETAR] |
+| Movimiento | 1.1 | 3 paradas (PB, P1, P2) | 🟢 |
+| | 1.2 | Detección de llegada por reed switch | 🟢 |
+| | 1.3 | Control de velocidad por PWM | 🟢 |
+| | 1.4 | Watchdog de viaje (timeout → FALLA) | 🟡 |
+| Llamado de piso | 2.1 | Botonera externa e interna | 🟢 |
+| | 2.2 | Cola de pedidos pendientes | 🟢 |
+| Puerta | 3.1 - 3.3 | Apertura/cierre automático con sensor | 🔴 |
+| Seguridad | 4.1 - 4.3 | Emergencia, sobrecarga, buzzer | 🟢 |
+| Control de acceso | 5.1 - 5.2 | Lectura y validación de UID (RC522) | 🟢 |
+| Interfaz de usuario | 6.1 - 6.3 | LCD, LEDs, Bluetooth | 🟢 |
+| Configuración | 7.1 - 7.3 | Menú SET_UP + persistencia en Flash | 🟢 |
+| Arquitectura | 8.1 - 8.4 | Bare metal, super-loop <1ms, tick 1ms, no bloqueante | 🟢 |
 
 <em>Tabla 4.5: Cumplimiento de requisitos.</em>
 
