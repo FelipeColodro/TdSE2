@@ -59,7 +59,7 @@ El sistema cuenta además con persistencia de configuración en Flash interna, c
 | Revisión | Cambios realizados | Fecha |
 | :---: | :--- | :---: |
 | 1.0 | Creación del esqueleto y estructura base del documento. | 08/07/2026 |
-| 1.1 | Redacción detallada, desarrollo y completado de las secciones del informe. | 11/08/2026 |
+| 1.1 | Redacción detallada, desarrollo y completado de las secciones del informe. | 20/09/2026 |
 
 # Índice
 
