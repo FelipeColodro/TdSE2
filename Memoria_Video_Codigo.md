@@ -651,8 +651,6 @@ Se logró un prototipo funcional que integra control de movimiento entre pisos, 
 
 Durante el desarrollo surgieron varias dificultades no triviales. La lectura de la celda de carga mediante el protocolo bit-banged del HX711 resultó sensible a los tiempos de espera entre flancos de reloj, generando lecturas inestables si no se respetaban con precisión los tiempos mínimos del datasheet. La comunicación con el módulo RC522 también representó un desafío, al implementarse el protocolo REQA + anticolisión sobre SPI sin recurrir a una librería externa, lo que exigió depurar manualmente cada trama intercambiada con el lector. Por último, la calibración mecánica de la cabina —ajustar la posición de los reed switches para que la detección de piso coincida con la parada real del motor— requirió varias iteraciones de prueba y ajuste sobre la maqueta.
 
-En conjunto, estas dificultades fueron resueltas mediante instrumentación progresiva (agregando trazas de depuración y, en el caso de los tiempos de ejecución, el contador de ciclos DWT) antes que por prueba y error, lo que permitió aislar cada problema al módulo que lo originaba.
-
 ## 5.2. Próximos pasos
 
 Si bien el prototipo actual cumple con los objetivos funcionales planteados para esta etapa, quedaron identificadas varias líneas de mejora para una futura iteración:
