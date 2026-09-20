@@ -625,7 +625,7 @@ Como se observa en la Tabla 4.4, el mayor consumo del sistema se concentra en el
 | :---- | :---- | :---- | :----: |
 | Movimiento | 1.1 | 3 paradas (PB, P1, P2) |  🟢 |
 | | 1.2 | Detección de llegada por reed switch | 🟢 |
-| | 1.3 | Control de velocidad por PWM | 🟢 |
+| | 1.3 | Control de velocidad por PWM | 🟡 |
 | | 1.4 | Watchdog de viaje (timeout → FALLA) | 🟡 |
 | Llamado de piso | 2.1 | Botonera externa e interna | 🟢 |
 | | 2.2 | Cola de pedidos pendientes | 🟢 |
@@ -633,7 +633,7 @@ Como se observa en la Tabla 4.4, el mayor consumo del sistema se concentra en el
 | Seguridad | 4.1 - 4.3 | Emergencia, sobrecarga, buzzer | 🟢 |
 | Control de acceso | 5.1 - 5.2 | Lectura y validación de UID (RC522) | 🟢 |
 | Interfaz de usuario | 6.1 - 6.3 | LCD, LEDs, Bluetooth | 🟢 |
-| Configuración | 7.1 - 7.3 | Menú SET_UP + persistencia en Flash | 🟢 |
+| Configuración | 7.1 - 7.3 | Menú SET_UP + persistencia en Flash | 🟡 |
 | Arquitectura | 8.1 - 8.4 | Bare metal, super-loop <1ms, tick 1ms, no bloqueante | 🟢 |
 
 <em>Tabla 4.5: Cumplimiento de requisitos.</em>
