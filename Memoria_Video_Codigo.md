@@ -643,15 +643,24 @@ Como se observa en la Tabla 4.4, el mayor consumo del sistema se concentra en el
 
 
 
-# Capítulo 5: Conclusiones
+## Capítulo 5: Conclusiones
 
-## 5.1. Resultados obtenidos
+### 5.1. Resultados obtenidos
 
-[COMPLETAR: reflexión honesta sobre qué se logró, qué dificultades surgieron (por ejemplo, temporización del HX711, protocolo del RC522 sin librería, calibración mecánica de la cabina) y cómo se resolvieron]
+Se logró un prototipo funcional que integra control de movimiento entre pisos, lectura de tarjetas RFID para el acceso, detección de sobrecarga mediante celda de carga, interfaz local por LCD y telemetría por Bluetooth, todo sobre una arquitectura Bare Metal con ejecutivo cíclico y tick de 1 ms.
 
-## 5.2. Próximos pasos
+Durante el desarrollo surgieron varias dificultades no triviales. La lectura de la celda de carga mediante el protocolo bit-banged del HX711 resultó sensible a los tiempos de espera entre flancos de reloj, generando lecturas inestables si no se respetaban con precisión los tiempos mínimos del datasheet. La comunicación con el módulo RC522 también representó un desafío, al implementarse el protocolo REQA + anticolisión sobre SPI sin recurrir a una librería externa, lo que exigió depurar manualmente cada trama intercambiada con el lector. Por último, la calibración mecánica de la cabina —ajustar la posición de los reed switches para que la detección de piso coincida con la parada real del motor— requirió varias iteraciones de prueba y ajuste sobre la maqueta.
 
-[COMPLETAR: por ejemplo, implementar modo de bajo consumo real con `HAL_PWR_EnterSLEEPMode()`, agregar más pisos, mejorar la app de Bluetooth, o sumar autenticación de sectores en el RC522 en vez de solo UID]
+En conjunto, estas dificultades fueron resueltas mediante instrumentación progresiva (agregando trazas de depuración y, en el caso de los tiempos de ejecución, el contador de ciclos DWT) antes que por prueba y error, lo que permitió aislar cada problema al módulo que lo originaba.
+
+### 5.2. Próximos pasos
+
+Si bien el prototipo actual cumple con los objetivos funcionales planteados para esta etapa, quedaron identificadas varias líneas de mejora para una futura iteración:
+
+1. **Implementar un modo de bajo consumo real**, por ejemplo mediante `HAL_PWR_EnterSLEEPMode()` durante los períodos de espera sin eventos pendientes, hoy ausente del firmware.
+2. **Agregar control de velocidad real por PWM** sobre el motor, aprovechando que el hardware ya está preparado pero actualmente se opera en modo digital ON/OFF.
+3. **Sumar autenticación de sectores en el RC522** en lugar de validar solo el UID de la tarjeta, para elevar el nivel de seguridad del control de acceso.
+4. **Mejorar la aplicación de Bluetooth**, incorporando confirmación de comandos recibidos y no solo el envío de estado del sistema.
 
 # Capítulo 6: Uso de herramientas de IA
 
